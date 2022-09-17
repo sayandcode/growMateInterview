@@ -1,0 +1,61 @@
+{
+  "title": "Will China invade Taiwan before end september?",
+  "portfolio":{
+    "chance": 0.11,
+    "totalBid":{
+      "amount": 25495,
+      "duration": "24H"
+    },
+    "bidPrice":{
+      "yes":9,
+      "no": 89
+    }
+  },
+  "news":{
+    "stats":{
+      "count": 215,
+      "predictionPercentage":{
+        "yes": 0.12,
+        "no": 0.88,
+        "null": 0.1
+      }
+    },
+    "featured":[
+      {
+        "author": "TheHill",
+        "content": "Last week, the dire warnings that appeared in the Wall Street Journal, The Economist and Foreign Affairs about China's imminent war with or...",
+        "date": "September 1, 2021"
+      },
+      {
+        "author": "BBC",
+        "content": "Most people the BBC spoke to do not believe China is about to attack Taiwan. \"They're a bunch of gangsters,\" said one man fishing on the...",
+        "date": "September 1, 2021"
+      },
+      {
+        "author": "BBC",
+        "content": "Most people the BBC spoke to do not believe China is about to attack Taiwan. \"They're a bunch of gangsters,\" said one man fishing on the...",
+        "date": "September 1, 2021"
+      }
+    ],
+    "reactions": [
+      {
+        "author": "Linda",
+        "content": "If China does indeed attack Taiwan soon, October is the likely time since the..."
+      },
+      {
+        "author": "TomBN",
+        "content": "I will be surprised if #China will in fact attack Taiwan. Doing so requires lots of..."
+      }
+    ],
+    "related": [
+      {
+        "id": 1,
+        "title": "Liz Truss will be UK’s next Prime Minister?"
+      },
+      {
+        "id": 2,
+        "title": "British Pound will fall after Prime Minister elections?"
+      }
+    ]
+  }
+}

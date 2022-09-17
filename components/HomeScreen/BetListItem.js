@@ -3,14 +3,16 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 import { useNavigation } from '@react-navigation/native';
 import theme from '../Theme';
 
-function BetListItem({ item: { title, img } }) {
+function BetListItem({ item: { betID, title, img } }) {
   const { navigate } = useNavigation();
 
+  const navigateToBetScreen = () => {
+    const params = { betID };
+    navigate('BetScreen', params);
+  };
+
   return (
-    <Pressable
-      style={styles.itemContainer}
-      onPress={() => navigate('BetScreen')}
-    >
+    <Pressable style={styles.itemContainer} onPress={navigateToBetScreen}>
       <Image source={img} style={styles.img} />
       <View style={styles.textSide}>
         <Text style={styles.text}>{title}</Text>

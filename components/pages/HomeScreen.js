@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   h1: {
     fontSize: RFPercentage(5),
     fontFamily: 'Lato-Bold',
-    marginBottom: RFPercentage(1),
+    marginVertical: RFPercentage(1),
   },
 });
 

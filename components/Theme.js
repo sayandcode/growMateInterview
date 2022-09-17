@@ -23,6 +23,7 @@ const theme = {
   typography: {
     fontSize: {
       medium: RFPercentage(2),
+      large: RFPercentage(2.5),
     },
   },
 };

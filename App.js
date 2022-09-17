@@ -1,5 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
+import { StatusBar } from 'expo-status-bar';
 import Routes from './components/Routes';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
+      <StatusBar style="inverted" translucent={false} />
       <Routes />
     </NavigationContainer>
   );
