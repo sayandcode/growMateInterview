@@ -6,7 +6,7 @@ import ActionButtons from './Subcomponents/ActionButtons';
 import Chance from './Subcomponents/Chance';
 import TotalBid from './Subcomponents/TotalBid';
 
-function Portfolio({ portfolio: { chance, increasing, totalBid, bidPrice } }) {
+function Portfolio({ data: { chance, increasing, totalBid, bidPrice } }) {
   return (
     <LinearGradient
       colors={[theme.palette.secondary.main, theme.palette.primary.main]}

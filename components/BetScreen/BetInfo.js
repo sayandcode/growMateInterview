@@ -1,12 +1,15 @@
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import theme from '../Theme';
 import Portfolio from './Portfolio/Portfolio';
+import Tabs from './Tabs/Tabs';
 
 function BetInfo({ betDataResource }) {
-  const { portfolio } = betDataResource.read();
+  const { portfolio, tabs } = betDataResource.read();
+
   return (
     <View style={styles.container}>
-      <Portfolio portfolio={portfolio} />
+      <Portfolio data={portfolio} />
+      <Tabs data={tabs} />
     </View>
   );
 }
