@@ -83,9 +83,6 @@ const fallbackStyles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: theme.palette.grey.main,
   },
-  spinner: {
-    fontSize: 90,
-  },
 });
 
 export default BetImg;

@@ -2,6 +2,7 @@
   "title": "Will China invade Taiwan before end september?",
   "portfolio":{
     "chance": 0.11,
+    "increasing": true,
     "totalBid":{
       "amount": 25495,
       "duration": "24H"

@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useResource } from '../../utils/CustomHooks/useResource';
 import BetImg, { BetImgFallback } from '../BetScreen/BetImg';
+import BetInfo, { BetInfoFallback } from '../BetScreen/BetInfo';
 import fetchBetScreenData from '../BetScreen/fetchBetScreenData';
 
 function BetScreen({ route }) {
@@ -16,9 +17,12 @@ function BetScreen({ route }) {
   );
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ height: '100%' }}>
       <Suspense fallback={<BetImgFallback />}>
         <BetImg betDataResource={betScreenDataResource} />
+      </Suspense>
+      <Suspense fallback={<BetInfoFallback />}>
+        <BetInfo betDataResource={betScreenDataResource} />
       </Suspense>
     </SafeAreaView>
   );
