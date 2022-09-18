@@ -5,7 +5,7 @@ function CommentsPreview({ data }) {
   return (
     <View style={styles.previewContainer}>
       {data.map((commentData) => (
-        <Comment data={commentData} key={commentData.authorID} />
+        <Comment truncate data={commentData} key={commentData.authorID} />
       ))}
     </View>
   );

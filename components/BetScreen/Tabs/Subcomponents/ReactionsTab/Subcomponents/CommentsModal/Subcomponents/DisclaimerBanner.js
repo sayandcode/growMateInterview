@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import theme from '../../../../../../../Theme';
 
 function DisclaimerBanner() {
   return (
@@ -21,6 +22,6 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   hyperlink: {
-    color: '#1A73FD',
+    color: theme.palette.blue.main,
   },
 });

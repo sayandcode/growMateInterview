@@ -11,6 +11,7 @@ function CommentsScroller({ dataResource }) {
         data={data}
         keyExtractor={({ commentID }) => commentID}
         renderItem={({ item }) => <Comment data={item} />}
+        style={styles.scroller}
       />
     </View>
   );
@@ -36,6 +37,10 @@ async function getAllComments(betID) {
 const styles = StyleSheet.create({
   container: {
     marginTop: '5%',
+    flex: 1,
+  },
+  scroller: {
+    flex: 1,
   },
 });
 
