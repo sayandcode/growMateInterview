@@ -21,7 +21,7 @@ function OverlayModal({ heading, visible, onClose: handleClose, children }) {
           </Pressable>
         </View>
         <Chips />
-        {children}
+        <View style={styles.childrenContainer}>{children}</View>
       </View>
     </Modal>
   );
@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
     width: '100%',
     flex: 7,
     backgroundColor: 'white',
-    paddingHorizontal: '5%',
   },
   container: {
     backgroundColor: 'white',
@@ -55,6 +54,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     flexDirection: 'row',
+    marginHorizontal: '5%',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
@@ -62,4 +62,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato-Bold',
     fontSize: theme.typography.fontSize.large,
   },
+  childrenContainer: { flex: 1 },
 });

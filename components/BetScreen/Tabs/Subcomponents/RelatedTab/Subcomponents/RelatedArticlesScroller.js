@@ -28,4 +28,8 @@ async function getAllRelatedArticles(betID) {
 export default RelatedArticlesScroller;
 export { getAllRelatedArticles };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  scroller: {
+    marginHorizontal: '5%',
+  },
+});

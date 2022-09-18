@@ -38,9 +38,7 @@ const styles = StyleSheet.create({
   container: {
     marginTop: '5%',
     flex: 1,
-  },
-  scroller: {
-    flex: 1,
+    marginHorizontal: '5%',
   },
 });
 

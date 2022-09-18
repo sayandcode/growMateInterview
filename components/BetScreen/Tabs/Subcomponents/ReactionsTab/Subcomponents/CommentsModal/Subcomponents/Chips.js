@@ -14,7 +14,7 @@ export default Chips;
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: '5%',
+    margin: '5%',
     flexDirection: 'row',
     alignItems: 'center',
   },
