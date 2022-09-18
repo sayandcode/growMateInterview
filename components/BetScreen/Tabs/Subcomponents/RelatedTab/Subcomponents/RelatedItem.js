@@ -6,10 +6,10 @@ import SuspendedImg from '../../../../../SuspendedImg';
 import theme from '../../../../../Theme';
 import { BetScreenContext } from '../../../../BetScreenContext';
 
-function RelatedItem({ style: additionalStyles, data: { title, pic } }) {
+function RelatedItem({ style: additionalStyles, data: { title, picID } }) {
   const { betID } = useContext(BetScreenContext);
   const imgResource = useResource(
-    fetchRelatedItemImg.bind(null, betID, pic),
+    fetchRelatedItemImg.bind(null, betID, picID),
     []
   );
 

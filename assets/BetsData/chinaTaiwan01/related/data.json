@@ -1,12 +1,12 @@
 [
   {
     "articleId": 1,
-    "pic": "liz01",
+    "picID": "liz01",
     "title": "Liz Truss will be UK’s next Prime Minister?"
   },
   {
     "articleId": 2,
-    "pic": "pmElec01",
+    "picID": "pmElec01",
     "title": "British Pound will fall after Prime Minister elections?"
   },
   {
@@ -16,12 +16,12 @@
   },
   {
     "articleId": 4,
-    "pic": "liz01",
+    "picID": "liz01",
     "title": "Liz Truss will be UK’s next Prime Minister?"
   },
   {
     "articleId": 5,
-    "pic": "pmElec01",
+    "picID": "pmElec01",
     "title": "British Pound will fall after Prime Minister elections?"
   },
   {
