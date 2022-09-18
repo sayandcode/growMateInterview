@@ -8,7 +8,10 @@ import {
   Lato_700Bold,
   Lato_900Black,
 } from '@expo-google-fonts/lato';
-import { MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
+import {
+  MontserratAlternates_500Medium,
+  MontserratAlternates_700Bold,
+} from '@expo-google-fonts/montserrat-alternates';
 import Routes from './components/Routes';
 
 export default function App() {
@@ -17,6 +20,7 @@ export default function App() {
     'Lato-Regular': Lato_400Regular,
     'Lato-Bold': Lato_700Bold,
     'Lato-Black': Lato_900Black,
+    'MA-Medium': MontserratAlternates_500Medium,
     'MA-Bold': MontserratAlternates_700Bold,
   });
   if (!fontsLoaded) return null;

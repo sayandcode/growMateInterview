@@ -1,13 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import theme from '../../../../Theme';
+import Overview from './Subcomponents/Overview';
 
-function ReactionsTab() {
+function ReactionsTab({ data: { overview, comments } }) {
   return (
-    <View>
-      <Text>ReactionsTab</Text>
+    <View style={styles.container}>
+      <Overview data={overview} />
     </View>
   );
 }
 
 export default ReactionsTab;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: theme.palette.white.main,
+  },
+});

@@ -54,9 +54,9 @@
           "content": "I will be surprised if #China will in fact attack Taiwan. Doing so requires lots of..."
         }
       ],
-      "counts":{
-        "expert": 215,
-        "comment": 95000
+      "overview":{
+        "expertCount": "215",
+        "commentCount": "95K"
       }
     },
     "related": [
