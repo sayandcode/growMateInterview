@@ -1,4 +1,4 @@
-import { Path } from 'react-native-svg';
+import { Circle, Path } from 'react-native-svg';
 
 const symbols = {
   toggle: {
@@ -92,6 +92,30 @@ const symbols = {
           fill={color}
           scale={scale}
         />
+      );
+    },
+  },
+  plusInCircle: {
+    size: 12,
+    content(color, scale) {
+      return (
+        <>
+          <Circle
+            cx={6}
+            cy={6}
+            r={5}
+            scale={scale}
+            stroke={color}
+            strokeWidth={0.5}
+          />
+          <Path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M6 6v3h.5V6H9v-.5H6.5V3H6v2.5H3V6h3Z"
+            fill={color}
+            scale={scale}
+          />
+        </>
       );
     },
   },
