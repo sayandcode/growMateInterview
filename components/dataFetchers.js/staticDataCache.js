@@ -4,6 +4,7 @@ const staticDataCache = {
   chinaTaiwan01: {
     betData: require('../../assets/BetsData/chinaTaiwan01/data.json'),
     commentData: require('../../assets/BetsData/chinaTaiwan01/comments/data.json'),
+    relatedData: require('../../assets/BetsData/chinaTaiwan01/related/data.json'),
   },
 };
 

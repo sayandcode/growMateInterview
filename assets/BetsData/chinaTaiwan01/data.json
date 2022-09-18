@@ -69,11 +69,13 @@
     },
     "related": [
       {
-        "id": 1,
+        "articleId": 1,
+        "pic": "liz01",
         "title": "Liz Truss will be UK’s next Prime Minister?"
       },
       {
-        "id": 2,
+        "articleId": 2,
+        "pic": "pmElec01",
         "title": "British Pound will fall after Prime Minister elections?"
       }
     ]

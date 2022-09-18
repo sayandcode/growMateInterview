@@ -7,7 +7,7 @@ import CommentsPreview from './Subcomponents/CommentsPreview';
 import Overview from './Subcomponents/Overview';
 
 function ReactionsTab({ data: { overview, comments } }) {
-  const [showMoreComments, setShowMoreComments] = useState(true);
+  const [showMoreComments, setShowMoreComments] = useState(false);
   return (
     <View style={styles.container}>
       <Pressable onPress={() => setShowMoreComments(true)}>

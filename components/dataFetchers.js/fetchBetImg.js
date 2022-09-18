@@ -6,7 +6,7 @@ async function fetchBetImg(betID) {
   await new Promise((res) => {
     setTimeout(res, 500);
   });
-  return staticImages[betID];
+  return staticImages[betID].bg;
 }
 
 export default fetchBetImg;
