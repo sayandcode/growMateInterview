@@ -13,6 +13,7 @@ import {
   MontserratAlternates_700Bold,
 } from '@expo-google-fonts/montserrat-alternates';
 import Routes from './components/Routes';
+import Navbar from './components/Navbar';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -29,6 +30,7 @@ export default function App() {
     <NavigationContainer>
       <StatusBar style="inverted" translucent={false} />
       <Routes />
+      <Navbar />
     </NavigationContainer>
   );
 }
