@@ -18,7 +18,10 @@ const theme = {
     grey: {
       light: '#D9D9D9',
       main: '#687684',
-      dark: '#232526',
+      dark: '#2e2e2e',
+    },
+    white: {
+      main: '#F8F8F8',
     },
     withOpacity(color, opacity) {
       const opacityInHex = (opacity * 255).toString(16).split('.')[0];
@@ -27,6 +30,7 @@ const theme = {
   },
   typography: {
     fontSize: {
+      small: RFPercentage(1.9),
       medium: RFPercentage(2),
       large: RFPercentage(2.5),
     },

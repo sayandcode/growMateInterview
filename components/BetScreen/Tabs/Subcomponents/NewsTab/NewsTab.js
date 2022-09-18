@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import theme from '../../../../Theme';
 import Bubble from './Subcomponents/Bubble';
+import FeaturedCard from './Subcomponents/FeaturedCard';
 import Graphs from './Subcomponents/Graphs';
 
 function NewsTab({ data: { stats, featured } }) {
@@ -8,6 +9,7 @@ function NewsTab({ data: { stats, featured } }) {
     <View style={styles.container}>
       <Text style={styles.heading}>{stats.count} Expert Opinion</Text>
       <Stats data={stats} />
+      <Featured data={featured} />
     </View>
   );
 }
@@ -21,10 +23,21 @@ function Stats({ data }) {
   );
 }
 
+function Featured({ data }) {
+  return (
+    <ScrollView horizontal style={styles.featuredContainer}>
+      {data.map((item) => (
+        <FeaturedCard item={item} key={item.id} />
+      ))}
+    </ScrollView>
+  );
+}
+
 export default NewsTab;
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: theme.palette.white.main,
     flex: 1,
   },
   heading: {
@@ -37,5 +50,8 @@ const styles = StyleSheet.create({
   statsContainer: {
     flexDirection: 'row',
     marginHorizontal: '5%',
+  },
+  featuredContainer: {
+    paddingVertical: '5%',
   },
 });

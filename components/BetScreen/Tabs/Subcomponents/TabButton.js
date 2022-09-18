@@ -21,9 +21,7 @@ function TabButton({
       <Text
         style={{
           ...styles.text,
-          color: selected
-            ? theme.palette.primary.main
-            : theme.palette.grey.dark,
+          color: theme.palette[selected ? 'primary' : 'grey'].main,
         }}
       >
         {children}

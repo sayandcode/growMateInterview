@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import {
   useFonts,
+  Lato_300Light,
   Lato_400Regular,
   Lato_700Bold,
   Lato_900Black,
@@ -12,6 +13,7 @@ import Routes from './components/Routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
+    'Lato-Light': Lato_300Light,
     'Lato-Regular': Lato_400Regular,
     'Lato-Bold': Lato_700Bold,
     'Lato-Black': Lato_900Black,
