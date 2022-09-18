@@ -3,6 +3,7 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 const theme = {
   palette: {
     primary: {
+      light: '#C930C5',
       main: '#E432C1',
       contrastText: 'white',
     },
@@ -18,6 +19,10 @@ const theme = {
       light: '#D9D9D9',
       main: '#687684',
       dark: '#232526',
+    },
+    withOpacity(color, opacity) {
+      const opacityInHex = (opacity * 255).toString(16).split('.')[0];
+      return `${color}${opacityInHex}`;
     },
   },
   typography: {

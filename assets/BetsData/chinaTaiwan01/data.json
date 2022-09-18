@@ -19,7 +19,7 @@
         "predictionPercentage":{
           "yes": 0.12,
           "no": 0.88,
-          "null": 0.1
+          "nil": 0.01
         }
       },
       "featured":[
@@ -40,16 +40,22 @@
         }
       ]
     },
-    "reactions": [
-      {
-        "author": "Linda",
-        "content": "If China does indeed attack Taiwan soon, October is the likely time since the..."
-      },
-      {
-        "author": "TomBN",
-        "content": "I will be surprised if #China will in fact attack Taiwan. Doing so requires lots of..."
+    "reactions": {
+      "comments":[
+        {
+          "author": "Linda",
+          "content": "If China does indeed attack Taiwan soon, October is the likely time since the..."
+        },
+        {
+          "author": "TomBN",
+          "content": "I will be surprised if #China will in fact attack Taiwan. Doing so requires lots of..."
+        }
+      ],
+      "counts":{
+        "expert": 215,
+        "comment": 95000
       }
-    ],
+    },
     "related": [
       {
         "id": 1,

@@ -27,7 +27,7 @@ function Tabs({ data: { news, reactions, related } }) {
     }
   }
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.tabSwitcher}>
         {tabOptions.map((option) => (
           <TabButton
@@ -39,7 +39,7 @@ function Tabs({ data: { news, reactions, related } }) {
           </TabButton>
         ))}
       </View>
-      {switchTabs(currTab)}
+      <View style={styles.tabContent}>{switchTabs(currTab)}</View>
     </View>
   );
 }
@@ -47,6 +47,9 @@ function Tabs({ data: { news, reactions, related } }) {
 export default Tabs;
 
 const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+  },
   tabSwitcher: {
     flexDirection: 'row',
     backgroundColor: 'white',
@@ -61,5 +64,8 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
 
     elevation: 5,
+  },
+  tabContent: {
+    flexGrow: 1,
   },
 });
