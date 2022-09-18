@@ -3,7 +3,7 @@ import fetchBetImg from '../dataFetchers.js/fetchBetImg';
 async function fetchBetList() {
   // simulates a network request
   await new Promise((res) => {
-    setTimeout(res, 1000);
+    setTimeout(res, 500);
   });
 
   const allBetsData = require('../../assets/BetsData/allBets.json');

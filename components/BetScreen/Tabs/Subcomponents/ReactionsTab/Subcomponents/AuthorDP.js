@@ -22,7 +22,7 @@ function AuthorDPFallback() {
 async function getAuthorDP(authorID) {
   // simulate network request
   await new Promise((res) => {
-    setTimeout(res, 1000);
+    setTimeout(res, 500);
   });
 
   return staticDPCache[authorID];

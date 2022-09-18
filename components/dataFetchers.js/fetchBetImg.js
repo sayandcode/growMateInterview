@@ -4,7 +4,7 @@ import staticImages from './staticImageCache';
 async function fetchBetImg(betID) {
   // simulate network request delay
   await new Promise((res) => {
-    setTimeout(res, 1000);
+    setTimeout(res, 500);
   });
   return staticImages[betID];
 }

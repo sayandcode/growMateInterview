@@ -4,9 +4,9 @@ import staticDataCache from './staticDataCache';
 async function fetchBetData(betID) {
   // simulate network request delay
   await new Promise((res) => {
-    setTimeout(res, 1000);
+    setTimeout(res, 500);
   });
 
-  return staticDataCache[betID];
+  return staticDataCache[betID].betData;
 }
 export default fetchBetData;
