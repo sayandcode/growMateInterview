@@ -7,10 +7,7 @@ import BetScreenContextProvider from '../BetScreen/BetScreenContext';
 import fetchBetScreenData from '../BetScreen/fetchBetScreenData';
 
 function BetScreen({ route }) {
-  /* todo: uncomment this */
-  // const { betID } = route.params;
-  /* todo: delete this */
-  const betID = 'chinaTaiwan01';
+  const { betID } = route.params;
 
   const betScreenDataResource = useResource(
     fetchBetScreenData.bind(null, betID),
