@@ -1,4 +1,4 @@
-import fetchBetImg from '../dataFetchers.js/fetchBetImg';
+import fetchBetImg from '../../utils/dataFetchers/fetchBetImg';
 
 async function fetchBetList() {
   // simulates a network request

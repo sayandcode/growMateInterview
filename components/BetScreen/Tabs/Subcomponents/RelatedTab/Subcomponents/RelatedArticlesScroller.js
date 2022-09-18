@@ -1,5 +1,5 @@
 import { FlatList, StyleSheet } from 'react-native';
-import staticDataCache from '../../../../../dataFetchers.js/staticDataCache';
+import staticDataCache from '../../../../../../utils/dataFetchers/staticDataCache';
 import RelatedItem from './RelatedItem';
 
 function RelatedArticlesScroller({ dataResource }) {

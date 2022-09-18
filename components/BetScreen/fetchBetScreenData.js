@@ -1,5 +1,5 @@
-import fetchBetData from '../dataFetchers.js/fetchBetData';
-import fetchBetImg from '../dataFetchers.js/fetchBetImg';
+import fetchBetData from '../../utils/dataFetchers/fetchBetData';
+import fetchBetImg from '../../utils/dataFetchers/fetchBetImg';
 
 async function fetchBetScreenData(betID) {
   const betDataRequest = fetchBetData(betID);

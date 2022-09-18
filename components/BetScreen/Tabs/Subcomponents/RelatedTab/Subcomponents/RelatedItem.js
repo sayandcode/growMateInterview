@@ -1,7 +1,7 @@
 import { Suspense, useContext } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { useResource } from '../../../../../../utils/CustomHooks/useResource';
-import fetchRelatedItemImg from '../../../../../dataFetchers.js/fetchRelatedItemImg';
+import fetchRelatedItemImg from '../../../../../../utils/dataFetchers/fetchRelatedItemImg';
 import SuspendedImg from '../../../../../SuspendedImg';
 import theme from '../../../../../Theme';
 import { BetScreenContext } from '../../../../BetScreenContext';

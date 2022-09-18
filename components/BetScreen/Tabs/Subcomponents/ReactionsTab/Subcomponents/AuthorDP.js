@@ -1,5 +1,5 @@
 import { Image, StyleSheet, View } from 'react-native';
-import staticDPCache from '../../../../../dataFetchers.js/staticDPCache';
+import staticDPCache from '../../../../../../utils/dataFetchers/staticDPCache';
 import theme from '../../../../../Theme';
 
 function AuthorDP({ color, authorDPResource }) {

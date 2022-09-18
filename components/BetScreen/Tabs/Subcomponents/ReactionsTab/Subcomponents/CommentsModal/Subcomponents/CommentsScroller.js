@@ -1,5 +1,5 @@
 import { ActivityIndicator, FlatList, StyleSheet, View } from 'react-native';
-import staticDataCache from '../../../../../../../dataFetchers.js/staticDataCache';
+import staticDataCache from '../../../../../../../../utils/dataFetchers/staticDataCache';
 import theme from '../../../../../../../Theme';
 import Comment from '../../Comment';
 
