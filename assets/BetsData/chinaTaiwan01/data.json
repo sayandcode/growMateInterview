@@ -46,12 +46,20 @@
     "reactions": {
       "comments":[
         {
+          "commentid": 6,
+          "authorID": "linda06",
+          "dpColor": "primary",
           "author": "Linda",
-          "content": "If China does indeed attack Taiwan soon, October is the likely time since the..."
+          "content": "If China does indeed attack Taiwan soon, October is the likely time since the Taiwan Strait waters will be calm, facilitating amphibious operations. The drills around Taiwan allowed China to build up forces in Fujian, which is part of what's needed before an invasion.",
+          "timestamp": "1h ago"
         },
         {
+          "commentid": 2,
+          "authorID": "tom02",
+          "dpColor": "grey",
           "author": "TomBN",
-          "content": "I will be surprised if #China will in fact attack Taiwan. Doing so requires lots of..."
+          "content": "I will be surprised if #China will in fact attack Taiwan. Doing so requires lots of courage, which China lacks.",
+          "timestamp": "3h ago"
         }
       ],
       "overview":{

@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'white',
     justifyContent: 'space-evenly',
+    zIndex: 10,
 
     shadowColor: '#BDC5CD',
     shadowOffset: {
