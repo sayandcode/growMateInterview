@@ -1,31 +1,26 @@
-import { Modal, Pressable, StyleSheet } from 'react-native';
-import theme from '../../../../../../Theme';
-import ModalContent from './Subcomponents/ModalContent';
+import { Suspense, useContext } from 'react';
+import { useResource } from '../../../../../../../utils/CustomHooks/useResource';
+import { BetScreenContext } from '../../../../../BetScreenContext';
+import OverlayModal from '../../../OverlayModal';
+import CommentsScroller, {
+  CommentsScrollerFallback,
+  getAllComments,
+} from './Subcomponents/CommentsScroller';
+import DisclaimerBanner from './Subcomponents/DisclaimerBanner';
+import ModalCommentInput from './Subcomponents/ModalCommentInput';
 
 function CommentsModal({ visible, onClose: handleClose }) {
+  const { betID } = useContext(BetScreenContext);
+  const allCommentsResource = useResource(getAllComments.bind(null, betID), []);
   return (
-    <Modal
-      visible={visible}
-      onRequestClose={handleClose}
-      animationType="slide"
-      transparent
-    >
-      <Pressable onPress={handleClose} style={styles.overlayBG} />
-      <ModalContent onClose={handleClose} style={styles.content} />
-    </Modal>
+    <OverlayModal visible={visible} heading="Reactions" onClose={handleClose}>
+      <DisclaimerBanner />
+      <ModalCommentInput />
+      <Suspense fallback={<CommentsScrollerFallback />}>
+        <CommentsScroller dataResource={allCommentsResource} />
+      </Suspense>
+    </OverlayModal>
   );
 }
 
 export default CommentsModal;
-
-const styles = StyleSheet.create({
-  overlayBG: {
-    backgroundColor: theme.palette.grey.dark,
-    opacity: 0.5,
-    flex: 3,
-  },
-  content: {
-    width: '100%',
-    flex: 7,
-  },
-});
